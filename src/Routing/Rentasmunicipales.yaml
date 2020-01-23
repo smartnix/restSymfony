@@ -1,0 +1,161 @@
+#Tipos Conceptos
+tiposConceptos_listar:
+    path:      /RentasMunicipales/tiposConceptos/listar/
+    defaults:   {_controller: App\Controller\Rentasmunicipales\tiposConceptosController::listarTipoConceptos}
+tiposConceptos_nuevo:
+    path:     /RentasMunicipales/tiposConceptos/Nuevo
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::nuevoTipoConcepto}
+tiposConceptos_guardar:
+    path:     /RentasMunicipales/tiposConceptos/Guardar
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::guardarTipoConcepto}
+tiposConceptos_ver:
+    path:     /RentasMunicipales/tiposConceptos/Ver/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::verTipoConcepto}
+tiposConceptos_editar:
+    path:     /RentasMunicipales/tiposConceptos/editar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::editarTipoConcepto}
+tiposConceptos_actualizar:
+    path:     /RentasMunicipales/tiposConceptos/actualizar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::actualizarTipoConcepto}
+tiposConceptos_eliminar:
+    path:     /RentasMunicipales/tiposConceptos/eliminar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::eliminarTipoConcepto}   
+    
+#Tipos Conceptos
+conceptos_listar:
+    path:      /RentasMunicipales/conceptos/listar/{obs}
+    defaults:   {_controller: App\Controller\Rentasmunicipales\conceptosController::listarConceptos, obs: 0}
+conceptos_nuevo:
+    path:     /RentasMunicipales/conceptos/Nuevo
+    defaults: { _controller: App\Controller\Rentasmunicipales\conceptosController::nuevoConcepto}
+conceptos_guardar:
+    path:     /RentasMunicipales/conceptos/Guardar
+    defaults: { _controller: App\Controller\Rentasmunicipales\conceptosController::guardarConcepto}
+conceptos_ver:
+    path:     /RentasMunicipales/conceptos/Ver/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\conceptosController::verConcepto}
+conceptos_editar:
+    path:     /RentasMunicipales/conceptos/editar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\conceptosController::editarConcepto}
+conceptos_actualizar:
+    path:     /RentasMunicipales/conceptos/actualizar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\conceptosController::actualizarConcepto}
+
+ 
+    #Tarifas
+tarifas_listar:
+    path:      /RentasMunicipales/tarifas/listar/{est}
+    defaults:   {_controller: App\Controller\Rentasmunicipales\tarifasController::listarTarifas, est: 1}
+tarifas_nuevo:
+    path:     /RentasMunicipales/tarifas/Nuevo
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::nuevoTarifa}
+tarifas_guardar:
+    path:     /RentasMunicipales/tarifas/Guardar
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::guardarTarifa}
+tarifas_ver:
+    path:     /RentasMunicipales/tarifas/Ver/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::verTarifa}
+tarifas_editar:
+    path:     /RentasMunicipales/tarifas/editar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::editarTarifa}
+tarifas_actualizar:
+    path:     /RentasMunicipales/tarifas/actualizar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::actualizarTarifa}
+tarifas_eliminar:
+    path:     /RentasMunicipales/tarifas/eliminar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::eliminarTarifa} 
+obtenerNaturaleza:
+    path:     /RentasMunicipales/tarifas/obtenerNaturaleza/
+    defaults: { _controller: App\Controller\Rentasmunicipales\tarifasController::obtenerNaturaleza} 
+    
+#configurar facturas
+conf_facturas_listar:
+    path:      /RentasMunicipales/confFacturas/configuracion/
+    defaults: {_controller: App\Controller\Rentasmunicipales\facturasController::conf_facturas}
+    
+#configurar acuerdos de pago
+conf_acuerdos_pago:
+    path:      /RentasMunicipales/confAcuerdosPago/configuracion/
+    defaults:   {_controller: App\Controller\Rentasmunicipales\acuerdosPagoController::confAcuerdosPago}
+#subclases
+subclase_eliminar:
+    path:      /RentasMunicipales/Subclase/eliminar/{id}
+    defaults:   {_controller: App\Controller\Rentasmunicipales\tiposConceptosController::eliminarSubclase}
+obtener_subclase:
+    path:      /RentasMunicipales/ObtenerSubclase/
+    defaults:   {_controller: App\Controller\Rentasmunicipales\conceptosController::obtenerSubclase}
+
+#Facturacion
+facturacionren_listar:
+    path:      /RentasMunicipales/facturacionren/listar/
+    defaults:   {_controller: App\Controller\Rentasmunicipales\facturasController::listarFacturacionRen}
+facturacionren_nuevo:
+    path:     /RentasMunicipales/facturacionren/Nuevo/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::nuevoFacturacionRen, id: 0}
+facturacionren_guardar:
+    path:     /RentasMunicipales/facturacionren/Guardar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::guardarFacturacionRen}
+facturacionren_cancelar:
+    path:     /RentasMunicipales/facturacionren/Cancelar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::cancelarFacturacionRen}
+facturacionren_ver:
+    path:     /RentasMunicipales/facturacionren/Ver/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::verFacturacionRen}
+facturacionren_editar:
+    path:     /RentasMunicipales/facturacionren/editar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::editarFacturacionRen}
+facturacionren_actualizar:
+    path:     /RentasMunicipales/facturacionren/actualizar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::actualizarFacturacionRen}
+facturacionren_eliminar:
+    path:     /RentasMunicipales/facturacionren/eliminar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::eliminarFacturacionRen} 
+facturren_crearFactura_ajax:
+    path:     /RentasMunicipales/facturacionrenAjax/
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::ajaxFacturacionRen} 
+    
+#Acuerdos
+acuerdopagoRen_nuevo: 
+    path:     /AcuerdoRentas/Nuevo/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::guardarAcuerdo}
+acuerdoRen_ver: 
+    path:     /AcuerdoRentas/Ver/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::verAcuerdo} 
+anexosRen_actualizar: 
+    path:     /AcuerdoRentas/actualziarAnexo/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::anexosActualizar}
+acuerdoRen_anular: 
+    path:     /AcuerdoRentas/anular/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::acuerdoRenAnular, id: 0} 
+acuerdoRen_eliminar_rolTipo: 
+    path:     /AcuerdoRentas/EliminarRolTipo/{idRol},{idTipo}
+    defaults: { _controller: App\Controller\Rentasmunicipales\tiposConceptosController::eliminarRolTipo} 
+      
+acuerdoRen_imprimirResolucion: 
+    path:     /AcuerdoRentas/imprimirResolucion/
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::imprimirResolucionAcuerdo}      
+acuerdoRen_imprimir: 
+    path:     /AcuerdoRentas/imprimir/
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::imprimirAcuerdo}      
+acuerdoRenPagoDetalle_ver: 
+    path:     /AcuerdoRentas/verAcuerdoPagoDetalle/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::verAcuerdoPagoDetalle}      
+acuerdos_listarRentas: 
+    path:     /AcuerdosRentas/listar/
+    defaults: { _controller: App\Controller\Rentasmunicipales\acuerdosPagoController::listarAcuerdos}    
+#Asobancaria
+asobancariaRentas_cargar: 
+    path:     /RentasMunicipales/asobancaria/cargar/{id}
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::nuevoPlanoAsobancaria,id: 0}
+asobancariaRentas_recaudar: 
+    path:     /RentasMunicipales/asobancaria/recaudar/
+    defaults: { _controller: App\Controller\Rentasmunicipales\facturasController::recaudarAsobancaria}
+    
+#-----INFORME PRESUPUESTO -----------
+informes_rentasmenores:
+    path:      /RentasMenores/Informes/{tipoInforme}
+    defaults:   {_controller: App\Controller\Rentasmunicipales\informesRentasController::verInformes}
+generar_informes_rentasmenores:
+    path:      /RentasMenores/GnrInformes/{tipoInforme}
+    defaults:   {_controller: App\Controller\Rentasmunicipales\informesRentasController::generarInformes}
+   
